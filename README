@@ -2,47 +2,42 @@ Nume: Florin Postolache
 Grupă: 335CC
 
 Tema 3 Loader de Executabile
-# Este recomandat să folosiți diacritice
 
-Organizare
--
-1. Explicație pentru structura creată (sau soluția de ansamblu aleasă):
+Imi cer scuze ca scriu README-ul in romana dar am comentarii in engleza.
 
-***Obligatoriu:*** 
-* De făcut referință la abordarea generală menționată în paragraful de mai sus. Aici se pot băga bucăți de cod/funcții - etc.
-* Consideri că tema este utilă?
-* Consideri implementarea naivă, eficientă, se putea mai bine?
-
-***Opțional:***
-* De menționat cazuri speciale (corner cases), nespecificate în enunț și cum au fost tratate.
-
+Organizare:
+    Nu pot sa zic ca am adaugat nu stiu ce structuri ajutatoare pentru 
+tema aceasta. Singurul lucru adaugat a fost cate un vector pentru fiecare
+segment care sa imi spuna daca o anumita pagina din acel segment este
+deja mapata sau nu.
+    Abordarea generala cred ca a fost destul de directa. Am incercat
+sa scriu cat mai putine linii de cod dar in acelasi timp am incercat
+sa nu fac codul foarte greu de inteles. Sper ca am reusit.
+    Consider ca tema este chiar foarte utila, interesanta si usurica
+dupa ce ai inteles cateva chestii de la curs. Mi-a placut.
+    Cred ca mai bine de atat nu se putea.
 
 Implementare
--
-
-* De specificat dacă întregul enunț al temei e implementat
-* Dacă există funcționalități extra, pe lângă cele din enunț - descriere succintă (maximum 3-4 rânduri/funcționalitate) + motivarea lor (maximum o frază)
-* De specificat funcționalitățile lipsă din enunț (dacă există) și menționat dacă testele reflectă sau nu acest lucru
-* Dificultăți întâmpinate
-* Lucruri interesante descoperite pe parcurs
+    Am implementat intregul enunt. 
+    Nu exista functionalitati extra.
+    Dificultatea cea mai mare a fost sa inteleg mai bine
+cum sa tratez cazul special in care trebuie sa zeroizez toata zona aceea
+din .bss.
 
 Cum se compilează și cum se rulează?
--
-* Explicație, ce biblioteci linkează, cum se face build
-* Cum se rulează executabilul, se rulează cu argumente (sau nu)
+    Executabilul se compileaza folosind comanda make din folderul cu tema.
+Dupa compilare se va crea o biblioteca dinamica care va trebui mutata in
+fisierul de checker.
+    Acest executabil nu se ruleaza singur. El este incarcat la nevoie
+de catre checker pentru a rula testele.
 
 Bibliografie
--
 
-* Resurse utilizate - toate resursele publice de pe internet/cărți/code snippets, chiar dacă sunt laboratoare de SO
+https://ocw.cs.pub.ro/courses/so/laboratoare/laborator-04
+https://ocw.cs.pub.ro/courses/so/laboratoare/laborator-05
+https://ocw.cs.pub.ro/courses/so/laboratoare/laborator-06
+https://man7.org/linux/man-pages/man2/sigaction.2.html
+https://man7.org/linux/man-pages/man2/mmap.2.html
 
 Git
--
-1. Link către repo-ul de git
-
-Ce să **NU**
--
-* Detalii de implementare despre fiecare funcție/fișier în parte
-* Fraze lungi care să ocolească subiectul în cauză
-* Răspunsuri și idei neargumentate
-* Comentarii și *TODO*-uri
+https://github.com/maniatro111/SO_tema3
